@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        position: relative;
+        font-size: 48px;
+        font-family: Arial, sans-serif;
+        color: #333;
+        overflow: hidden;
+      }
+
+      .text {
+        display: inline-block;
+        position: relative;
+        animation: formLine 2s forwards ease-out;
+        white-space: nowrap; /* Ensure all letters are on the same line */
+      }
+
+      @keyframes formLine {
+        0% {
+          opacity: 0;
+          height: 0;
+        }
+        100% {
+          opacity: 1;
+          height: 50px;
+        }
+      }
+      .txt-box {
+        width: 500px;
+        height: 500px;
+        background: #f00;
+        font-size: 40px;
+        line-height: 1.2;
+        font-weight: 400;
+        font-family: "Mont-Heavy";
+        display: block;
+        overflow: hidden;
+      }
+      .txt-box span {
+        display: block;
+        opacity: 0;
+        transition-duration: 0.3s;
+        transform-origin: top;
+        height: 0;
+      }
+      .txt-box:hover span {
+        height: 50px;
+        font-size: 50px;
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <span class="text">Hello World!</span>
+    </div>
+    <div class="txt-box"><span>asdfasdf</span></div>
+    <script>
+      var arr = ["html5", "EDM", "Coca Cola", "creativity"];
+      var index = 0;
+      setInterval(function () {
+        console.log(arr[index++]);
+        if (index == arr.length) index = 0;
+      }, 500);
+    </script>
+  </body>
+</html>
