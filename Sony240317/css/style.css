@@ -27,6 +27,7 @@
   font-family: "SCDream5";
   src: url(../webfonts/S-Core_Dream_OTF/SCDream5.otf);
 }
+
 body {
   font-family: "Gotham-Medium";
 }
@@ -49,10 +50,9 @@ div.first {
 }
 div.first img {
   width: 100vw;
-
   object-fit: cover;
-  height: 72vh;
   position: absolute;
+  height: 688px;
   top: 150px;
   z-index: 10;
   animation: main 2.5s forwards;

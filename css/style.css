@@ -32,7 +32,9 @@
   font-family: "SCDream5";
   src: url(../webfonts/S-Core_Dream_OTF/SCDream5.otf);
 }
-
+html {
+  scroll-behavior: smooth;
+}
 * {
   margin: 0;
   padding: 0;
@@ -288,9 +290,9 @@ section .sec2_wrap .about {
 section .sec2_wrap .about .pict {
   background: #949494;
   width: 308px;
-  height: 308px;
+  height: 400px;
   margin: 0 auto;
-  border-radius: 308px;
+  background: url(../images/me555.jpg) center/cover;
 }
 section .sec2_wrap .about .profile {
   display: flex;
@@ -367,7 +369,7 @@ section.sec2 .skill ul li {
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  width: 260px;
+  width: 270px;
 }
 section.sec2 .skill ul li .skill_circle {
   width: 150px;
