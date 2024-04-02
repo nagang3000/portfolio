@@ -73,7 +73,7 @@ body {
 }
 header {
   width: 100%;
-  margin: 50px auto;
+  margin: 0 auto;
   margin-bottom: 0;
   padding: 0 50px;
   padding-left: 100px;
@@ -124,6 +124,7 @@ header .menu {
 }
 section {
   width: 100%;
+  height: 931px;
 }
 section .main {
   width: 100%;
@@ -199,7 +200,6 @@ section .main .txt_sub {
 
 article {
   width: 100%;
-  margin: 200px auto;
   padding: 0 100px;
   box-sizing: border-box;
   font-family: "Rajdhani-Bold";
@@ -269,8 +269,9 @@ article .contents_line {
 
 section.sec2 {
   width: 100%;
-  margin: 300px auto;
-  padding: 0 200px;
+  height: 931px;
+  margin: 0 auto;
+  padding: 200px 200px;
   box-sizing: border-box;
 }
 section .sec2_wrap {
@@ -346,32 +347,37 @@ section.sec2 .history .history_inner dl dt {
   font-family: "SCDream5";
 }
 /* 스킬 */
-section.sec2 .skill {
+section.sec_skill {
   width: 100%;
-  margin: 200px auto;
+  margin: 0 auto;
+  padding: 50px 200px;
+  box-sizing: border-box;
 }
-section.sec2 .skill_title h2 {
+section.sec_skill .skill {
+  width: 100%;
+}
+section.sec_skill .skill_title h2 {
   width: 100%;
   font-family: "Rajdhani-Bold";
   margin-bottom: 100px;
 }
-section.sec2 .skill ul {
+section.sec_skill .skill ul {
   display: flex;
   text-align: center;
   gap: 50px;
   margin: 100px auto;
 }
-section.sec2 .skill ul.skill_line {
+section.sec_skill .skill ul.skill_line {
   justify-content: center;
 }
-section.sec2 .skill ul li {
+section.sec_skill .skill ul li {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
   width: 270px;
 }
-section.sec2 .skill ul li .skill_circle {
+section.sec_skill .skill ul li .skill_circle {
   width: 150px;
   height: 150px;
   border-radius: 150px;
@@ -384,12 +390,12 @@ section.sec2 .skill ul li .skill_circle {
 
   /* background: conic-gradient(yellowgreen 277deg, white 0deg); */
 }
-section.sec2 .skill ul li .skill_list:hover svg {
+section.sec_skill .skill ul li .skill_list:hover svg {
   fill: #fff;
 
   /* background: conic-gradient(yellowgreen 277deg, white 0deg); */
 }
-section.sec2 .skill ul li .skill_circle::before {
+section.sec_skill .skill ul li .skill_circle::before {
   content: "";
   width: 400px;
   height: 400px;
@@ -403,25 +409,25 @@ section.sec2 .skill ul li .skill_circle::before {
   animation: wave infinite 3s;
   transition: background 0.5s;
 }
-section.sec2 .skill ul li:nth-child(1) .skill_circle::before {
+section.sec_skill .skill ul li:nth-child(1) .skill_circle::before {
   top: 12%;
 }
-section.sec2 .skill ul li:nth-child(2) .skill_circle::before {
+section.sec_skill .skill ul li:nth-child(2) .skill_circle::before {
   top: 12%;
 }
-section.sec2 .skill ul.skill_line li:nth-child(1) .skill_circle::before {
+section.sec_skill .skill ul.skill_line li:nth-child(1) .skill_circle::before {
   top: 20%;
 }
-section.sec2 .skill ul.skill_line li:nth-child(2) .skill_circle::before {
+section.sec_skill .skill ul.skill_line li:nth-child(2) .skill_circle::before {
   top: 25%;
 }
-section.sec2 .skill ul.skill_line li:nth-child(3) .skill_circle::before {
+section.sec_skill .skill ul.skill_line li:nth-child(3) .skill_circle::before {
   top: 35%;
 }
-section.sec2 .skill ul li:hover .skill_circle::before {
+section.sec_skill .skill ul li:hover .skill_circle::before {
   background: #535fe8;
 }
-section.sec2 .skill ul li p {
+section.sec_skill .skill ul li p {
   font-family: "SCDream4";
 }
 
@@ -432,7 +438,7 @@ section.sec2 .skill ul li p {
   }
 }
 
-section.sec2 .skill ul li .skill_list {
+section.sec_skill .skill ul li .skill_list {
   width: 75px;
   height: 75px;
   border-radius: 200px;
@@ -448,7 +454,7 @@ section.sec2 .skill ul li .skill_list {
 section.sec3 {
   width: 100%;
   height: 965px;
-  margin: 200px auto;
+  margin: 0 auto;
   padding: 0 100px;
   box-sizing: border-box;
 }
@@ -476,7 +482,7 @@ section.sec3 .sub_text {
 }
 section.sec4 {
   width: 100%;
-  margin: 200px auto;
+  margin: 0 auto;
   box-sizing: border-box;
 }
 section.sec4 .webfolio_wrap {
@@ -542,7 +548,7 @@ section.sec4 .webfolio .mock_up img {
 section.sec5 {
   width: 100%;
   height: 965px;
-  margin: 200px auto;
+  margin: 0 auto;
   padding: 0 100px;
   box-sizing: border-box;
 }
@@ -573,6 +579,7 @@ section.sec6 {
   bottom: 0;
   width: 100%;
   margin: 0 auto;
+  height: 5000px;
 }
 section.sec6 .interior_top {
   display: flex;
@@ -632,12 +639,24 @@ section.sec6 .interior_info img {
   object-fit: cover;
 }
 
-section.sec6 img {
+section.sec6 div img {
   width: 100%;
+}
+section#interior_2 {
+  position: relative;
   bottom: 0;
+  width: 100%;
+  margin: 0 auto;
+  height: 5500px;
 }
 section.sec7 {
   width: 100%;
+  height: 1200px;
+}
+
+section#uxui_2 {
+  width: 100%;
+  height: 2000px;
 }
 section.sec7 .ux_robo {
   width: 100%;
@@ -645,10 +664,22 @@ section.sec7 .ux_robo {
   padding: 100px;
   box-sizing: border-box;
 }
+section.sec7 .ux_poki {
+  width: 100%;
+  background: #fff;
+  padding: 100px;
+  box-sizing: border-box;
+  text-align: center;
+}
 section.sec7 .ux_robo img {
   width: 100%;
   object-fit: cover;
 }
+section.sec7 .ux_poki img {
+  height: 100%;
+  object-fit: contain;
+}
+
 section.sec7 .uxui_top {
   display: flex;
   position: sticky;
@@ -667,4 +698,8 @@ section.sec7 .uxui_top {
 }
 section#uxui_2 .uxui_top {
   border-bottom: 3px solid #73ccd4;
+}
+footer {
+  width: 100%;
+  height: 100px;
 }
